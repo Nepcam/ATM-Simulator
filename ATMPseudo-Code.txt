@@ -1,0 +1,38 @@
+CheckDeposit()
+   Declare minimum and maximum variables
+ 
+   If deposit < minimum and deposit < maximum
+      MessageBox Show error!
+      return false
+   ELSE
+      return true
+   ENDIF
+
+Deposit button
+   TRY
+      Decalare deposit amount variable and parse it a value from the textbox
+      
+      IF CheckDeposit(deposit amount)
+         current balance += deposit amount
+         display current balance
+   CATCH
+      MessageBox Show error!
+
+CheckWithdrawal()
+   Declare minimum variable to set the minimum value 
+ 
+   IF withdrawal < min and withdrawal > current balance
+      MessageBox Show error!
+      return false
+   ELSE
+      return true
+
+Withdraw button
+   TRY
+      Declare withdraw amount and parse it a value from the text box
+      
+      IF CheckWithdrawal(withdraw amount)
+         current amount - withdraw amount
+         display current balance
+   CATCH
+      MessageBox Show error! 	
