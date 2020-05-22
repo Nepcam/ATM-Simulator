@@ -23,7 +23,7 @@ namespace ATM_Simulator
         decimal currentBalance = 0;
 
         /// <summary>
-        /// Checks the deposit value
+        /// Checks the correct deposit amount
         /// </summary>
         /// <param name="deposit">The dollar value from the user input</param>
         /// <returns>Returns a booleon value</returns>
@@ -61,6 +61,11 @@ namespace ATM_Simulator
             }
         }
 
+        /// <summary>
+        /// Checks the correct amount of the withdrawal
+        /// </summary>
+        /// <param name="withdrawal">The dollar value from the user input</param>
+        /// <returns>Returns a booleon value</returns>
         private bool CheckWithdrawal(decimal withdrawal)
         {
             decimal min = 20;
@@ -77,7 +82,6 @@ namespace ATM_Simulator
             }
 
         }
-
 
         private void buttonWithdraw_Click(object sender, EventArgs e)
         {
