@@ -81,6 +81,7 @@
             this.buttonDeposit.TabIndex = 4;
             this.buttonDeposit.Text = "Deposit";
             this.buttonDeposit.UseVisualStyleBackColor = true;
+            this.buttonDeposit.Click += new System.EventHandler(this.buttonDeposit_Click);
             // 
             // button2
             // 
@@ -91,6 +92,7 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "Withdraw";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // buttonExit
             // 
@@ -115,6 +117,7 @@
             this.Controls.Add(this.textBoxEnterAmount);
             this.Controls.Add(this.labelEnterAmount);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
