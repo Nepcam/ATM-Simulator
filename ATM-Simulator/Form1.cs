@@ -69,7 +69,6 @@ namespace ATM_Simulator
         private bool CheckWithdrawal(decimal withdrawal)
         {
             decimal min = 20;
-            decimal max = currentBalance;
 
             if (withdrawal < min || withdrawal > currentBalance)
             {
