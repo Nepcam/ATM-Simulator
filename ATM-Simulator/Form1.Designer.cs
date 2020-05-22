@@ -33,7 +33,7 @@
             this.textBoxDisplayAmount = new System.Windows.Forms.TextBox();
             this.labelBalance = new System.Windows.Forms.Label();
             this.buttonDeposit = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonWithdraw = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -83,16 +83,16 @@
             this.buttonDeposit.UseVisualStyleBackColor = true;
             this.buttonDeposit.Click += new System.EventHandler(this.buttonDeposit_Click);
             // 
-            // button2
+            // buttonWithdraw
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(162, 126);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Withdraw";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonWithdraw.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonWithdraw.Location = new System.Drawing.Point(162, 126);
+            this.buttonWithdraw.Name = "buttonWithdraw";
+            this.buttonWithdraw.Size = new System.Drawing.Size(75, 23);
+            this.buttonWithdraw.TabIndex = 5;
+            this.buttonWithdraw.Text = "Withdraw";
+            this.buttonWithdraw.UseVisualStyleBackColor = true;
+            this.buttonWithdraw.Click += new System.EventHandler(this.buttonWithdraw_Click);
             // 
             // buttonExit
             // 
@@ -103,6 +103,7 @@
             this.buttonExit.TabIndex = 6;
             this.buttonExit.Text = "Exit";
             this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // Form1
             // 
@@ -110,7 +111,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonExit);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonWithdraw);
             this.Controls.Add(this.buttonDeposit);
             this.Controls.Add(this.labelBalance);
             this.Controls.Add(this.textBoxDisplayAmount);
@@ -131,7 +132,7 @@
         private System.Windows.Forms.TextBox textBoxDisplayAmount;
         private System.Windows.Forms.Label labelBalance;
         private System.Windows.Forms.Button buttonDeposit;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonWithdraw;
         private System.Windows.Forms.Button buttonExit;
     }
 }

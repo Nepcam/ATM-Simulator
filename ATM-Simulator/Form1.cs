@@ -78,7 +78,8 @@ namespace ATM_Simulator
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+
+        private void buttonWithdraw_Click(object sender, EventArgs e)
         {
             try
             {
@@ -94,6 +95,11 @@ namespace ATM_Simulator
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
